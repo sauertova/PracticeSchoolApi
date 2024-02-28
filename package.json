@@ -1,14 +1,22 @@
 {
   "name": "practiceschoolapi",
   "version": "1.0.0",
-  "description": "",
+  "description": "package json",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seed": "node server/db/index.js"
   },
-  "author": "Tova Sauer",
+  "author": "Tova",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "pg": "^8.11.3"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^3.0.3"
   }
 }
